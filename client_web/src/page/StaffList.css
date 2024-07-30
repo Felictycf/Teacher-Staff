@@ -1,0 +1,50 @@
+.staff-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+}
+
+.staff-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.staff-card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.staff-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.staff-info h2 {
+    margin: 0;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+.staff-info h2 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.staff-info h2 a:hover {
+    color: #0056b3;
+}
+
+.staff-info p {
+    margin: 5px 0 0;
+    color: #666;
+}
